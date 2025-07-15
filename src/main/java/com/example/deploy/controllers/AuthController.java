@@ -21,4 +21,9 @@ public class AuthController {
     public String login(@RequestBody LoginRequest req) {
         return svc.login(req);
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "Authorisation working!";
+    }
 }
